@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Monsieur+La+Doulaise&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title> Productivity</title>
+</head>
+<body>
+    <div class="finalDiv">
+        <h1 id="final-title"></h1>
+
+        <div class="center-image">
+            <img src="/Users/deconde/Desktop/apps/todo/yes.jpeg" alt="Center image" id="successTasks" hidden>
+            <img src="/Users/deconde/Desktop/apps/todo/non.jpeg" alt="Center image" id="unsuccessTasks" hidden>
+        </div>
+
+        <span id="conclusion"></span>
+
+        <button id="restart-btn">BACK HOME</button>
+    </div>
+    
+    <script src="finishDay.js">
+        const restartBtn = document.getElementById("restart-btn");
+        restartBtn.addEventListener("click", () => {window.electronAPI.loadPage("index.html");})
+    </script>
+</body>
+</html>

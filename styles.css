@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9ecec;
+}
+
+/*------ HOME PAGE ------*/
+
+.mainDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainDiv h1 {
+    font-family: 'Monsieur La Doulaise', cursive;
+    font-weight: 400;
+    font-size: 60px;
+    color: #ea8a8a;
+    text-shadow: 2px 2px #FEF6F0;
+}
+
+.mainDiv .center-image {
+    width: 372px;
+    height: 357px;
+    border: 4px solid #f0d9da;
+    border-radius: 25px;
+    background-color: #FEF6F0;
+    margin-bottom: 24px;
+    box-shadow: 2px 2px 4px white;
+}
+
+.mainDiv .center-image img {
+    width: 360px;
+    height: 345px;
+    border-radius: 25px;
+    padding: 3px 0px 0px 3px;
+}
+
+#start-btn {
+    font-family: 'Pixelify Sans';
+    font-size: 24px;
+    color: #FEF6F0;
+    background-color: #ea8a8a;
+    border: 4px solid #FEF6F0;
+    border-radius: 10px;
+    padding: 8px 24px;
+    box-shadow: 2px 2px 4px white;
+}
+#start-btn:hover {
+    transform: scale(1.1) perspective(1px);
+    transition: 0.3 ease;
+    cursor: pointer;
+}
+
+/*------ DASHBOARD ------*/
+
+.dashDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+}
+
+.top-section {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.datetime {
+    width: 30%;
+    height: 100%;
+    background-color: #FEF6F0;
+    border: 4px solid #f0d9da;
+    border-radius: 25px;
+    box-shadow: 2px 2px 4px white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+#day {
+    font-family: 'Pixelify Sans';
+    font-size: 20px;
+    font-weight: 600;
+    color:#ea8a8a;
+}
+#number {
+    font-family: 'Pixelify Sans';
+    font-size: 32px;
+    color: #FEF6F0;
+    background-color: #ea8a8a;
+    padding: 8px 12px;
+    border-radius: 50px;
+}
+#month {
+    font-family: 'Pixelify Sans';
+    font-size: 16px;
+    color:#ea8a8a;
+}
+
+.right-section {
+    width: 66%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;  
+}
+
+.progression {
+    height: 60%;
+    color:#ea8a8a;
+    background-color: #FEF6F0;
+    border: 4px solid #f0d9da;
+    border-radius: 25px;
+    box-shadow: 2px 2px 4px white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.progression h3 {
+    font-family: 'Pixelify Sans';
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+#progress-bar {
+    appearance: none;
+    height: 16px;
+    width: 70%;
+    border-radius: 10px;
+}
+#progress-bar::-webkit-progress-bar {
+    background-color: #f0d9da;
+    border-radius: 10px;
+}
+#progress-bar::-webkit-progress-value {
+    background-color: #ea8a8a;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+}
+
+.add-task {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+    justify-content: space-between;
+}
+.add-task input {
+    outline: none;
+    border: none;
+    padding: 14px;
+    border-radius: 50px;
+    background-color:#FEF6F0;
+}
+.add-task button {
+    font-size: 24px;
+    color: #ea8a8a;
+    background-color: #FEF6F0;
+    padding: 10px 16px;
+    outline: none;
+    border: none;
+    border-radius: 16px;
+}
+#add-btn {
+    cursor: pointer;
+}
+
+.bottom-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    background-color: #FEF6F0;
+    border: 4px solid #f0d9da;
+    border-radius: 25px;
+    box-shadow: 2px 2px 4px white;
+    margin-bottom: 24px;
+    padding: 16px;
+    gap: 14px;
+}
+.bottom-section .bx {
+    color: #ea8a8a;
+    margin: 0px;
+}
+.bottom-section p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 2px 0px;
+}
+.bottom-section p span {
+    font-family: 'Pixelify Sans';
+    color: #ea8a8a;
+    cursor: pointer;
+}
+
+
+#finish-btn {
+    font-family: 'Pixelify Sans';
+    font-size: 24px;
+    color: #FEF6F0;
+    background-color: #ea8a8a;
+    border: 4px solid #FEF6F0;
+    border-radius: 10px;
+    padding: 8px 24px;
+    box-shadow: 2px 2px 4px white;
+}
+#finish-btn:hover {
+    transform: scale(1.1) perspective(1px);
+    transition: 0.3 ease;
+    cursor: pointer;
+}
+
+/*------ END ------*/
+
+.finalDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+}
+
+#final-title {
+    font-family: 'Monsieur La Doulaise', cursive;
+    font-weight: 400;
+    font-size: 60px;
+    color: #ea8a8a;
+    text-shadow:2px 2px white;
+}
+
+.finalDiv .center-image {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    width: 372px;
+    height: 357px;
+    border: 4px solid #f0d9da;
+    border-radius: 25px;
+    background-color: #FEF6F0;
+    margin-bottom: 24px;
+    box-shadow: 2px 2px 4px white;
+}
+#unsuccessTasks, #successTasks{
+    border-radius: 25px;
+    width: 360px;
+    height: 345px;
+}
+
+
+#conclusion {
+    font-family: 'Pixelify Sans';
+    font-size: 24px;
+    margin-bottom: 16px;
+    color:#ea8a8a;
+
+}
+
+#restart-btn {
+    font-family: 'Pixelify Sans';
+    font-size: 24px;
+    color: #FEF6F0;
+    background-color: #ea8a8a;
+    border: 4px solid #FEF6F0;
+    border-radius: 10px;
+    padding: 8px 24px;
+    box-shadow: 2px 2px 4px white;
+}
+#restart-btn:hover {
+    transform: scale(1.1) perspective(1px);
+    transition: 0.3 ease;
+    cursor: pointer;
+}
+
+.done {
+    text-decoration: line-through; 
+    color: #ea8a8a; 
+    transition: 0.2s ease-in-out; 
+}
+
+.hidden {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
